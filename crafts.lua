@@ -389,9 +389,9 @@ core.register_craft({
 core.register_craft({
 	output = "glassmod:sandstonebrick 3",
 	recipe = {
-		{"", "default:sand_stonebrick", ""},
+		{"", "default:sandstonebrick", ""},
 		{"", "default:glass", ""},
-		{"", "default:sand_stonebrick",  ""}
+		{"", "default:sandstonebrick",  ""}
 	}
 })
 
@@ -504,7 +504,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:boockshelf 3",
+	output = "glassmod:bookshelf 3",
 	recipe = {
 		{"", "default:bookshelf", ""},
 		{"", "default:glass", ""},
