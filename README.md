@@ -2,7 +2,7 @@
 
 Minetest mod: "glassmod"
 
-Version 1.0, Status: beta
+Version 1.1, Status: beta
 
 License of source code:
 
