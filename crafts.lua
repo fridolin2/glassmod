@@ -211,6 +211,7 @@ core.register_craft({
 		{"", "default:stonebrick", ""},
 		{"", "default:glass", ""},
 		{"", "default:stonebrick",  ""}
+	}
 	
 })
 
