@@ -830,7 +830,7 @@ core.register_node("glassmod:lava", {
 	sounds = default.node_sound_glass_defaults()
 })
 
-core.register_node("glassmod:bockshelf", {
+core.register_node("glassmod:bookshelf", {
 	description = "Glass Bookshelf",
 	drawtype = "glasslike_framed",
 
