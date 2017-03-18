@@ -1,5 +1,5 @@
 core.register_craft({
-	output = "glassmod:tree 25",
+	output = "glassmod:tree 3",
 	recipe = {
 		{"", "default:tree", ""},
 		{"", "default:glass", ""},
@@ -8,7 +8,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:aspen 25",
+	output = "glassmod:aspen 3",
 	recipe = {
 		{"", "default:aspen_tree", ""},
 		{"", "default:glass", ""},
@@ -17,7 +17,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:acacia 25",
+	output = "glassmod:acacia 3",
 	recipe = {
 		{"", "default:acacia_tree", ""},
 		{"", "default:glass", ""},
@@ -26,7 +26,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:pine 25",
+	output = "glassmod:pine 3",
 	recipe = {
 		{"", "default:pine_tree", ""},
 		{"", "default:glass", ""},
@@ -35,7 +35,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:cobble 25",
+	output = "glassmod:cobble 3",
 	recipe = {
 		{"", "default:cobble", ""},
 		{"", "default:glass", ""},
@@ -44,7 +44,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:stone 25",
+	output = "glassmod:stone 3",
 	recipe = {
 		{"", "default:stone", ""},
 		{"", "default:glass", ""},
@@ -53,7 +53,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:brick 25",
+	output = "glassmod:brick 3",
 	recipe = {
 		{"", "default:brick", ""},
 		{"", "default:glass", ""},
@@ -62,7 +62,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:chest 25",
+	output = "glassmod:chest 3",
 	recipe = {
 		{"", "default:chest", ""},
 		{"", "default:glass", ""},
@@ -71,7 +71,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:clay 25",
+	output = "glassmod:clay 3",
 	recipe = {
 		{"", "default:clay", ""},
 		{"", "default:glass", ""},
@@ -80,7 +80,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:coralbrown 25",
+	output = "glassmod:coral_brown 3",
 	recipe = {
 		{"", "default:coral_brown", ""},
 		{"", "default:glass", ""},
@@ -89,7 +89,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:coralorange 25",
+	output = "glassmod:coralorange 3",
 	recipe = {
 		{"", "default:coral_orange", ""},
 		{"", "default:glass", ""},
@@ -98,7 +98,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:coralskeleton 25",
+	output = "glassmod:coralskeleton 3",
 	recipe = {
 		{"", "default:coral_skeleton", ""},
 		{"", "default:glass", ""},
@@ -107,7 +107,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:desertcobble 25",
+	output = "glassmod:desertcobble 3",
 	recipe = {
 		{"", "default:desert_cobble", ""},
 		{"", "default:glass", ""},
@@ -116,7 +116,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:dirt 25",
+	output = "glassmod:dirt 3",
 	recipe = {
 		{"", "default:dirt", ""},
 		{"", "default:glass", ""},
@@ -125,7 +125,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:drygrass 25",
+	output = "glassmod:drygrass 3",
 	recipe = {
 		{"default:sand", "default:dirt", ""},
 		{"", "default:glass", ""},
@@ -134,7 +134,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:furnace 25",
+	output = "glassmod:furnace 3",
 	recipe = {
 		{"", "default:furnace", ""},
 		{"", "default:glass", ""},
@@ -143,7 +143,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:grass 25",
+	output = "glassmod:grass 3",
 	recipe = {
 		{"default:leaves", "default:dirt", ""},
 		{"", "default:glass", ""},
@@ -152,7 +152,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:gravel 25",
+	output = "glassmod:gravel 3",
 	recipe = {
 		{"", "default:gravel", ""},
 		{"", "default:glass", ""},
@@ -161,25 +161,25 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:meselamp 99",
+	output = "glassmod:meselamp 6",
 	recipe = {
-		{"", "default:mese_lamp", ""},
+		{"", "default:meselamp", ""},
 		{"", "default:glass", ""},
-		{"", "default:mese_lamp",  ""}
+		{"", "default:meselamp",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:mossycobble 25",
+	output = "glassmod:mossycobble 3",
 	recipe = {
-		{"", "default:mossy_cobble", ""},
+		{"", "default:mossycobble", ""},
 		{"", "default:glass", ""},
-		{"", "default:mossy_cobble",  ""}
+		{"", "default:mossycobble",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:silversand 25",
+	output = "glassmod:silversand 3",
 	recipe = {
 		{"", "default:silver_sand", ""},
 		{"", "default:glass", ""},
@@ -188,7 +188,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:snow 25",
+	output = "glassmod:snow 3",
 	recipe = {
 		{"", "default:snow", ""},
 		{"", "default:glass", ""},
@@ -197,7 +197,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:stoneblock 25",
+	output = "glassmod:stoneblock 3",
 	recipe = {
 		{"", "default:stone_block", ""},
 		{"", "default:glass", ""},
@@ -206,16 +206,16 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:stonebrick 25",
+	output = "glassmod:stonebrick 3",
 	recipe = {
-		{"", "default:stone_brick", ""},
+		{"", "default:stonebrick", ""},
 		{"", "default:glass", ""},
-		{"", "default:stone_brick",  ""}
-	}
+		{"", "default:stonebrick",  ""}
+	
 })
 
 core.register_craft({
-	output = "glassmod:acaciawood 25",
+	output = "glassmod:acaciawood 3",
 	recipe = {
 		{"", "default:acacia_wood", ""},
 		{"", "default:glass", ""},
@@ -224,7 +224,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:aspenwood 25",
+	output = "glassmod:aspenwood 3",
 	recipe = {
 		{"", "default:aspen_wood", ""},
 		{"", "default:glass", ""},
@@ -233,16 +233,16 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:junglewood 25",
+	output = "glassmod:junglewood 3",
 	recipe = {
-		{"", "default:jungle_wood", ""},
+		{"", "default:junglewood", ""},
 		{"", "default:glass", ""},
-		{"", "default:jungle_wood",  ""}
+		{"", "default:junglewood",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:pinewood 25",
+	output = "glassmod:pinewood 3",
 	recipe = {
 		{"", "default:pine_wood", ""},
 		{"", "default:glass", ""},
@@ -251,7 +251,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:treewood 25",
+	output = "glassmod:treewood 3",
 	recipe = {
 		{"", "default:wood", ""},
 		{"", "default:glass", ""},
@@ -260,7 +260,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:bronze 25",
+	output = "glassmod:bronze 4",
 	recipe = {
 		{"", "default:bronze_ingot", ""},
 		{"", "default:glass", ""},
@@ -269,7 +269,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:coal 25",
+	output = "glassmod:coal 4",
 	recipe = {
 		{"", "default:coal_lump", ""},
 		{"", "default:glass", ""},
@@ -278,7 +278,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:copper 25",
+	output = "glassmod:copper 4",
 	recipe = {
 		{"", "default:copper_ingot", ""},
 		{"", "default:glass", ""},
@@ -287,7 +287,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:desertstone 25",
+	output = "glassmod:desertstone 3",
 	recipe = {
 		{"", "default:desert_stone", ""},
 		{"", "default:glass", ""},
@@ -296,7 +296,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:desersand 25",
+	output = "glassmod:desertsand 3",
 	recipe = {
 		{"", "default:desert_sand", ""},
 		{"", "default:glass", ""},
@@ -305,16 +305,16 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:deserstonebrick 25",
+	output = "glassmod:desertstonebrick 3",
 	recipe = {
-		{"", "default:desert_stone_brick", ""},
+		{"", "default:desert_stonebrick", ""},
 		{"", "default:glass", ""},
-		{"", "default:desert_stone_brick",  ""}
+		{"", "default:desert_stonebrick",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:deserstoneblock 25",
+	output = "glassmod:desertstoneblock 3",
 	recipe = {
 		{"", "default:desert_stone_block", ""},
 		{"", "default:glass", ""},
@@ -323,7 +323,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:diamond 80",
+	output = "glassmod:diamond 8",
 	recipe = {
 		{"", "default:diamond", ""},
 		{"", "default:glass", ""},
@@ -332,7 +332,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:gold 35",
+	output = "glassmod:gold 6",
 	recipe = {
 		{"", "default:gold_ingot", ""},
 		{"", "default:glass", ""},
@@ -341,16 +341,16 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:jungle_tree 25",
+	output = "glassmod:jungle_tree 3",
 	recipe = {
-		{"", "default:jungle_tree", ""},
+		{"", "default:jungletree", ""},
 		{"", "default:glass", ""},
-		{"", "default:jungle_tree",  ""}
+		{"", "default:jungletree",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:mese 80",
+	output = "glassmod:mese 8",
 	recipe = {
 		{"", "default:mese_crystal", ""},
 		{"", "default:glass", ""},
@@ -359,7 +359,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:sand 25",
+	output = "glassmod:sand 3",
 	recipe = {
 		{"", "default:sand", ""},
 		{"", "default:glass", ""},
@@ -368,34 +368,34 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:sandstone 25",
+	output = "glassmod:sandstone 3",
 	recipe = {
-		{"", "default:sand_stone", ""},
+		{"", "default:sandstone", ""},
 		{"", "default:glass", ""},
-		{"", "default:sand_stone",  ""}
+		{"", "default:sandstone",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:sandstoneblock 25",
+	output = "glassmod:sandstoneblock 3",
 	recipe = {
-		{"", "default:sand_stone_block", ""},
+		{"", "default:sandstone_block", ""},
 		{"", "default:glass", ""},
-		{"", "default:sand_stone_block",  ""}
+		{"", "default:sandstone_block",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:sandstonebrick 25",
+	output = "glassmod:sandstonebrick 3",
 	recipe = {
-		{"", "default:sand_stone_brick", ""},
+		{"", "default:sand_stonebrick", ""},
 		{"", "default:glass", ""},
-		{"", "default:sand_stone_brick",  ""}
+		{"", "default:sand_stonebrick",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:steel 25",
+	output = "glassmod:steel 4",
 	recipe = {
 		{"", "default:steel_ingot", ""},
 		{"", "default:glass", ""},
@@ -404,7 +404,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:ice 25",
+	output = "glassmod:ice 3",
 	recipe = {
 		{"", "default:ice", ""},
 		{"", "default:glass", ""},
@@ -413,7 +413,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:treeleaves 25",
+	output = "glassmod:treeleaves 3",
 	recipe = {
 		{"", "default:leaves", ""},
 		{"default:leaves", "default:glass", "default:leaves"},
@@ -422,7 +422,7 @@ core.register_craft({
 })
 
 	core.register_craft({
-	output = "glassmod:pineneedles 25",
+	output = "glassmod:pineneedles 3",
 	recipe = {
 		{"", "default:pine_needles", ""},
 		{"", "default:glass", ""},
@@ -431,7 +431,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:aspenleaves 25",
+	output = "glassmod:aspenleaves 3",
 	recipe = {
 		{"", "default:aspen_leaves", ""},
 		{"", "default:glass", ""},
@@ -440,7 +440,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:acacialeaves 25",
+	output = "glassmod:acacialeaves 3",
 	recipe = {
 		{"", "default:acacia_leaves", ""},
 		{"", "default:glass", ""},
@@ -449,7 +449,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:jungleleaves 25",
+	output = "glassmod:jungleleaves 3",
 	recipe = {
 		{"", "default:jungleleaves", ""},
 		{"", "default:glass", ""},
@@ -458,7 +458,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:cactusside 25",
+	output = "glassmod:cactusside 3",
 	recipe = {
 		{"", "", ""},
 		{"default:cactus", "default:glass", "default:cactus"},
@@ -467,7 +467,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:cactustop 25",
+	output = "glassmod:cactustop 3",
 	recipe = {
 		{"", "default:cactus", ""},
 		{"", "default:glass", ""},
@@ -476,7 +476,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:water 40",
+	output = "glassmod:water 4",
 	recipe = {
 		{"", "dye:blue", ""},
 		{"", "default:glass", ""},
@@ -485,7 +485,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:riverwater 40",
+	output = "glassmod:riverwater 4",
 	recipe = {
 		{"", "dye:cyan", ""},
 		{"", "default:glass", ""},
@@ -494,7 +494,7 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:lava 40",
+	output = "glassmod:lava 4",
 	recipe = {
 		{"", "dye:red", ""},
 		{"", "default:glass", ""},
@@ -503,16 +503,16 @@ core.register_craft({
 })
 
 core.register_craft({
-	output = "glassmod:boockshelf 25",
+	output = "glassmod:boockshelf 3",
 	recipe = {
-		{"", "default:boockshelf", ""},
+		{"", "default:bookshelf", ""},
 		{"", "default:glass", ""},
-		{"", "default:boockshelf",  ""}
+		{"", "default:bookshelf",  ""}
 	}
 })
 
 core.register_craft({
-	output = "glassmod:obsidian 99",
+	output = "glassmod:obsidian 8",
 	recipe = {
 		{"", "default:obsidian", ""},
 		{"", "default:glass", ""},
