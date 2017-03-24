@@ -62,6 +62,15 @@ core.register_craft({
 })
 
 core.register_craft({
+	output = "glassmod:brick_moreblocks 5",
+	recipe = {
+		{"", "default:brick", ""},
+		{"default:brick", "default:glass", "default:brick"},
+		{"", "default:brick",  ""}
+	}
+})
+
+core.register_craft({
 	output = "glassmod:chest 3",
 	recipe = {
 		{"", "default:chest", ""},
