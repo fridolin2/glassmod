@@ -106,6 +106,21 @@ core.register_node("glassmod:brick", {
 	sounds = default.node_sound_glass_defaults()
 })
 
+core.register_node("glassmod:brick_moreblocks", {
+	description = "Glass Brick (Moreblocks)",
+	drawtype = "glasslike_framed",
+
+	tiles = {"glassmod_brick_moreblocks.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_brick_moreblocks.png"),
+
+	paramtype = "light",
+	sunlight_propagates = true,
+	is_ground_content = false,
+
+	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	sounds = default.node_sound_glass_defaults()
+})
+
 core.register_node("glassmod:chest", {
 	description = "Glass Chest",
 	drawtype = "glasslike_framed",
