@@ -1,12 +1,12 @@
 local modpath = minetest.get_modpath("glassmod")
 dofile(modpath.."/crafts.lua")
-
+dofile(modpath.."/clean.lua")
 core.register_node("glassmod:tree", {
 	description = "Glass Tree",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_wood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_wood.png"),
+	tiles = {"glassmod_wood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_wood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -20,8 +20,8 @@ core.register_node("glassmod:aspen", {
 	description = "Glass Aspen",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_aspen.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_aspen.png"),
+	tiles = {"glassmod_aspen_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_aspen_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -35,8 +35,8 @@ core.register_node("glassmod:pine", {
 	description = "Glass Pine",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_pine.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_pine.png"),
+	tiles = {"glassmod_pine_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_pine_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -50,8 +50,8 @@ core.register_node("glassmod:acacia", {
 	description = "Glass Acacia",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_acacia.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_acacia.png"),
+	tiles = {"glassmod_acacia_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_acacia_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -65,8 +65,8 @@ core.register_node("glassmod:cobble", {
 	description = "Glass Cobble",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_cobble.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_cobble.png"),
+	tiles = {"glassmod_cobble_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_cobble_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -80,8 +80,8 @@ core.register_node("glassmod:stone", {
 	description = "Glass Stone",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_stone.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_stone.png"),
+	tiles = {"glassmod_stone_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_stone_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -95,8 +95,8 @@ core.register_node("glassmod:brick", {
 	description = "Glass Brick",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_brick.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_brick.png"),
+	tiles = {"glassmod_brick_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_brick_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -110,8 +110,8 @@ core.register_node("glassmod:brick_moreblocks", {
 	description = "Glass Brick (Moreblocks)",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_brick_moreblocks.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_brick_moreblocks.png"),
+	tiles = {"glassmod_brick_moreblocks_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_brick_moreblocks_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -125,8 +125,8 @@ core.register_node("glassmod:chest", {
 	description = "Glass Chest",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_chest.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_chest.png"),
+	tiles = {"glassmod_chest_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_chest_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -140,8 +140,8 @@ core.register_node("glassmod:clay", {
 	description = "Glass Clay",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_clay.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_clay.png"),
+	tiles = {"glassmod_clay_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_clay_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -155,8 +155,8 @@ core.register_node("glassmod:coral_brown", {
 	description = "Glass Coral Brown",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_coral_brown.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_coral_brown.png"),
+	tiles = {"glassmod_coral_brown_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_coral_brown_clean.png^glassmod_wood_detail.png"),
 	
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -170,8 +170,8 @@ core.register_node("glassmod:coralorange", {
 	description = "Glass Coral Orange",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_coralorange.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_coralorange.png"),
+	tiles = {"glassmod_coralorange_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_coralorange_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -185,8 +185,8 @@ core.register_node("glassmod:coralskeleton", {
 	description = "Glass Coral Skeleton",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_coralskeleton.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_coralskeleton.png"),
+	tiles = {"glassmod_coralskeleton_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_coralskeleton_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -200,8 +200,8 @@ core.register_node("glassmod:desertcobble", {
 	description = "Glass Desert Cobble",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_desertcobble.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_desertcobble.png"),
+	tiles = {"glassmod_desertcobble_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_desertcobble_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -215,8 +215,8 @@ core.register_node("glassmod:dirt", {
 	description = "Glass Dirt",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_dirt.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_dirt.png"),
+	tiles = {"glassmod_dirt_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_dirt_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -230,8 +230,8 @@ core.register_node("glassmod:drygrass", {
 	description = "Glass Dry Grass",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_drygrass.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_drygrass.png"),
+	tiles = {"glassmod_drygrass_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_drygrass_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -245,8 +245,8 @@ core.register_node("glassmod:furnace", {
 	description = "Glass Furnace",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_furnace.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_furnace.png"),
+	tiles = {"glassmod_furnace_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_furnace_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -260,8 +260,8 @@ core.register_node("glassmod:grass", {
 	description = "Glass Grass",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_grass.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_grass.png"),
+	tiles = {"glassmod_grass_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_grass_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -275,8 +275,8 @@ core.register_node("glassmod:gravel", {
 	description = "Glass Gravel",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_gravel.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_gravel.png"),
+	tiles = {"glassmod_gravel_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_gravel_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -290,8 +290,8 @@ core.register_node("glassmod:meselamp", {
 	description = "Glass Meselamp",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_meselamp.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_meselamp.png"),
+	tiles = {"glassmod_meselamp_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_meselamp_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	light_source = default.LIGHT_MAX - 3,
@@ -306,8 +306,8 @@ core.register_node("glassmod:mossycobble", {
 	description = "Glass Mossy Cobble",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_mossycobble.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_mossycobble.png"),
+	tiles = {"glassmod_mossycobble_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_mossycobble_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -321,8 +321,8 @@ core.register_node("glassmod:silversand", {
 	description = "Glass Silver Sand",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_silversand.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_silversand.png"),
+	tiles = {"glassmod_silversand_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_silversand_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -336,8 +336,8 @@ core.register_node("glassmod:snow", {
 	description = "Glass Snow",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_snow.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_snow.png"),
+	tiles = {"glassmod_snow_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_snow_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -351,8 +351,8 @@ core.register_node("glassmod:stoneblock", {
 	description = "Glass Stone Block",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_stoneblock.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_stoneblock.png"),
+	tiles = {"glassmod_stoneblock_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_stoneblock_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -366,8 +366,8 @@ core.register_node("glassmod:stonebrick", {
 	description = "Glass Stone Brick",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_stonebrick.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_stonebrick.png"),
+	tiles = {"glassmod_stonebrick_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_stonebrick_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -381,8 +381,8 @@ core.register_node("glassmod:acaciawood", {
 	description = "Glass Acacia Wood",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_acaciawood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_acaciawood.png"),
+	tiles = {"glassmod_acaciawood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_acaciawood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -396,8 +396,8 @@ core.register_node("glassmod:aspenwood", {
 	description = "Glass Aspen Wood",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_aspenwood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_aspenwood.png"),
+	tiles = {"glassmod_aspenwood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_aspenwood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -411,8 +411,8 @@ core.register_node("glassmod:junglewood", {
 	description = "Glass Jungle Wood",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_junglewood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_junglewood.png"),
+	tiles = {"glassmod_junglewood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_junglewood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -426,8 +426,8 @@ core.register_node("glassmod:pinewood", {
 	description = "Glass Pine Wood",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_pinewood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_pinewood.png"),
+	tiles = {"glassmod_pinewood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_pinewood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -441,8 +441,8 @@ core.register_node("glassmod:treewood", {
 	description = "Glass Wood",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_treewood.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_treewood.png"),
+	tiles = {"glassmod_treewood_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_treewood_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -456,8 +456,8 @@ core.register_node("glassmod:bronze", {
 	description = "Glass Bronze",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_bronze.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_bronze.png"),
+	tiles = {"glassmod_bronze_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_bronze_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -471,8 +471,8 @@ core.register_node("glassmod:coal", {
 	description = "Glass Coal",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_coal.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_coal.png"),
+	tiles = {"glassmod_coal_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_coal_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -486,8 +486,8 @@ core.register_node("glassmod:copper", {
 	description = "Glass Copper",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_copper.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_copper.png"),
+	tiles = {"glassmod_copper_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_copper_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -501,8 +501,8 @@ core.register_node("glassmod:desertstone", {
 	description = "Glass Desert Stone",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_desertstone.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_desertstone.png"),
+	tiles = {"glassmod_desertstone_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_desertstone_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -516,8 +516,8 @@ core.register_node("glassmod:desertsand", {
 	description = "Glass Desert Sand",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_desertsand.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_desertsand.png"),
+	tiles = {"glassmod_desertsand_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_desertsand_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -531,8 +531,8 @@ core.register_node("glassmod:desertstonebrick", {
 	description = "Glass Desert Stone Brick",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_desertstonebrick.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_desertstonebrick.png"),
+	tiles = {"glassmod_desertstonebrick_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_desertstonebrick_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -546,8 +546,8 @@ core.register_node("glassmod:desertstoneblock", {
 	description = "Glass Desert Stone Block",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_desertstoneblock.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_desertstoneblock.png"),
+	tiles = {"glassmod_desertstoneblock_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_desertstoneblock_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -561,8 +561,8 @@ core.register_node("glassmod:diamond", {
 	description = "Glass Diamond",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_diamond.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_diamond.png"),
+	tiles = {"glassmod_diamond_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_diamond_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -576,8 +576,8 @@ core.register_node("glassmod:gold", {
 	description = "Glass Gold",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_gold.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_gold.png"),
+	tiles = {"glassmod_gold_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_gold_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -591,8 +591,8 @@ core.register_node("glassmod:jungle_tree", {
 	description = "Glass Jungle Tree",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_jungle.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_jungle.png"),
+	tiles = {"glassmod_jungle_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_jungle_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -606,8 +606,8 @@ core.register_node("glassmod:mese", {
 	description = "Glass Mese",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_mese.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_mese.png"),
+	tiles = {"glassmod_mese_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_mese_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -622,8 +622,8 @@ core.register_node("glassmod:sand", {
 	description = "Glass Sand",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_sand.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_sand.png"),
+	tiles = {"glassmod_sand_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_sand_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -637,8 +637,8 @@ core.register_node("glassmod:sandstone", {
 	description = "Glass Sand Stone",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_sandstone.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_sandstone.png"),
+	tiles = {"glassmod_sandstone_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_sandstone_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -652,8 +652,8 @@ core.register_node("glassmod:sandstoneblock", {
 	description = "Glass Sand Stone Block",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_sandstoneblock.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_sandstoneblock.png"),
+	tiles = {"glassmod_sandstoneblock_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_sandstoneblock_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -667,8 +667,8 @@ core.register_node("glassmod:sandstonebrick", {
 	description = "Glass Sand Stone Brick",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_sandstonebrick.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_sandstonebrick.png"),
+	tiles = {"glassmod_sandstonebrick_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_sandstonebrick_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -682,8 +682,8 @@ core.register_node("glassmod:steel", {
 	description = "Glass Steel",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_steel.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_steel.png"),
+	tiles = {"glassmod_steel_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_steel_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -697,8 +697,8 @@ core.register_node("glassmod:ice", {
 	description = "Glass Ice",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_ice.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_ice.png"),
+	tiles = {"glassmod_ice_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_ice_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -712,8 +712,8 @@ core.register_node("glassmod:treeleaves", {
 	description = "Glass Leaves",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_treeleaves.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_treeleaves.png"),
+	tiles = {"glassmod_treeleaves_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_treeleaves_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -727,8 +727,8 @@ core.register_node("glassmod:pineneedles", {
 	description = "Glass Pine Needles",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_pineneedles.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_pineneedles.png"),
+	tiles = {"glassmod_pineneedles_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_pineneedles_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -742,8 +742,8 @@ core.register_node("glassmod:aspenleaves", {
 	description = "Glass Aspen Leaves",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_aspenleaves.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_aspenleaves.png"),
+	tiles = {"glassmod_aspenleaves_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_aspenleaves_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -757,8 +757,8 @@ core.register_node("glassmod:acacialeaves", {
 	description = "Glass Acacia Leaves",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_acacialeaves.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_acacialeaves.png"),
+	tiles = {"glassmod_acacialeaves_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_acacialeaves_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -772,8 +772,8 @@ core.register_node("glassmod:jungleleaves", {
 	description = "Glass Jungle Leaves",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_jungleleaves.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_jungleleaves.png"),
+	tiles = {"glassmod_jungleleaves_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_jungleleaves_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -787,8 +787,8 @@ core.register_node("glassmod:cactusside", {
 	description = "Glass Cactus Side",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_cactusside.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_cactusside.png"),
+	tiles = {"glassmod_cactusside_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_cactusside_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -802,8 +802,8 @@ core.register_node("glassmod:cactustop", {
 	description = "Glass Cactus Top",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_cactustop.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_cactustop.png"),
+	tiles = {"glassmod_cactustop_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_cactustop_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -817,8 +817,8 @@ core.register_node("glassmod:water", {
 	description = "Glass Water",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_water.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_water.png"),
+	tiles = {"glassmod_water_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_water_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -832,8 +832,8 @@ core.register_node("glassmod:lava", {
 	description = "Glass Lava",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_lava.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_lava.png"),
+	tiles = {"glassmod_lava_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_lava_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	light_source = default.LIGHT_MAX - 3,
@@ -849,8 +849,8 @@ core.register_node("glassmod:bookshelf", {
 	description = "Glass Bookshelf",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_bookshelf.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_bookshelf.png"),
+	tiles = {"glassmod_bookshelf_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_bookshelf_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -865,8 +865,8 @@ core.register_node("glassmod:riverwater", {
 	description = "Glass River Water",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_riverwater.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_riverwater.png"),
+	tiles = {"glassmod_riverwater_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_riverwater_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -881,8 +881,8 @@ core.register_node("glassmod:obsidian", {
 	description = "Glass Obsidian",
 	drawtype = "glasslike_framed",
 
-	tiles = {"glassmod_obsidian.png", "glassmod_wood_detail.png"},
-	inventory_image = core.inventorycube("glassmod_obsidian.png"),
+	tiles = {"glassmod_obsidian_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_obsidian_clean.png^glassmod_wood_detail.png"),
 
 	paramtype = "light",
 	sunlight_propagates = true,

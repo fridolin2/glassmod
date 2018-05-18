@@ -2,7 +2,7 @@
 
 Minetest mod: "glassmod"
 
-Version 1.1, Status: beta
+Version 1.1, Status: Version 1.1
 
 License of source code:
 
@@ -30,4 +30,4 @@ An glass Mod that makes all default blocks as an glass block
 
 Notes:
 
-should be playable with Minetest 0.4.15  or higher.
+should be playable with Minetest 0.4.16  or higher.
