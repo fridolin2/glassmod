@@ -437,7 +437,7 @@ minetest.register_craft( {
 minetest.register_craft( {
 	type = "shapeless",
 	output = '"glassmod:gold" 6' ,
-	recipe = {"glassmod:frame", "default:gold_ingort"}, 
+	recipe = {"glassmod:frame", "default:gold_ingot"}, 
 })
 minetest.register_craft( {
 	type = "shapeless",
