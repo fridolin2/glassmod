@@ -1,6 +1,22 @@
 local modpath = minetest.get_modpath("glassmod")
 dofile(modpath.."/crafts.lua")
 dofile(modpath.."/clean.lua")
+
+core.register_node("glassmod:frame", {
+	description = "Glass Frame",
+	drawtype = "glasslike_framed",
+
+	tiles = {"glassmod_frame_clean.png^glassmod_wood_detail.png", "glassmod_wood_detail.png"},
+	inventory_image = core.inventorycube("glassmod_frame_clean.png^glassmod_wood_detail.png"),
+
+	paramtype = "light",
+	sunlight_propagates = true,
+	is_ground_content = false,
+
+	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	sounds = default.node_sound_glass_defaults()
+})
+
 core.register_node("glassmod:tree", {
 	description = "Glass Tree",
 	drawtype = "glasslike_framed",
@@ -12,9 +28,12 @@ core.register_node("glassmod:tree", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
+
+
+
 
 core.register_node("glassmod:aspen", {
 	description = "Glass Aspen",
@@ -27,7 +46,7 @@ core.register_node("glassmod:aspen", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -42,7 +61,7 @@ core.register_node("glassmod:pine", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -57,7 +76,7 @@ core.register_node("glassmod:acacia", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -72,7 +91,7 @@ core.register_node("glassmod:cobble", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -87,7 +106,7 @@ core.register_node("glassmod:stone", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -102,7 +121,7 @@ core.register_node("glassmod:brick", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -117,7 +136,7 @@ core.register_node("glassmod:brick_moreblocks", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -132,7 +151,7 @@ core.register_node("glassmod:chest", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -147,7 +166,7 @@ core.register_node("glassmod:clay", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -162,7 +181,7 @@ core.register_node("glassmod:coral_brown", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -177,7 +196,7 @@ core.register_node("glassmod:coralorange", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -192,7 +211,7 @@ core.register_node("glassmod:coralskeleton", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -207,7 +226,7 @@ core.register_node("glassmod:desertcobble", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -222,7 +241,7 @@ core.register_node("glassmod:dirt", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -237,7 +256,7 @@ core.register_node("glassmod:drygrass", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -252,7 +271,7 @@ core.register_node("glassmod:furnace", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -267,7 +286,7 @@ core.register_node("glassmod:grass", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -282,7 +301,7 @@ core.register_node("glassmod:gravel", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -298,7 +317,7 @@ core.register_node("glassmod:meselamp", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -313,7 +332,7 @@ core.register_node("glassmod:mossycobble", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -328,7 +347,7 @@ core.register_node("glassmod:silversand", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -343,7 +362,7 @@ core.register_node("glassmod:snow", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -358,7 +377,7 @@ core.register_node("glassmod:stoneblock", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -373,7 +392,7 @@ core.register_node("glassmod:stonebrick", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -388,7 +407,7 @@ core.register_node("glassmod:acaciawood", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -403,7 +422,7 @@ core.register_node("glassmod:aspenwood", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -418,7 +437,7 @@ core.register_node("glassmod:junglewood", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -433,7 +452,7 @@ core.register_node("glassmod:pinewood", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -448,7 +467,7 @@ core.register_node("glassmod:treewood", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -463,7 +482,7 @@ core.register_node("glassmod:bronze", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -478,7 +497,7 @@ core.register_node("glassmod:coal", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -493,7 +512,7 @@ core.register_node("glassmod:copper", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -508,7 +527,7 @@ core.register_node("glassmod:desertstone", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -523,7 +542,7 @@ core.register_node("glassmod:desertsand", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -538,7 +557,7 @@ core.register_node("glassmod:desertstonebrick", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -553,7 +572,7 @@ core.register_node("glassmod:desertstoneblock", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -568,7 +587,7 @@ core.register_node("glassmod:diamond", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -583,7 +602,7 @@ core.register_node("glassmod:gold", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -598,7 +617,7 @@ core.register_node("glassmod:jungle_tree", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -614,7 +633,7 @@ core.register_node("glassmod:mese", {
 	light_source = default.LIGHT_MAX - 3,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -629,7 +648,7 @@ core.register_node("glassmod:sand", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -644,7 +663,7 @@ core.register_node("glassmod:sandstone", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -659,7 +678,7 @@ core.register_node("glassmod:sandstoneblock", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -674,7 +693,7 @@ core.register_node("glassmod:sandstonebrick", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -689,7 +708,7 @@ core.register_node("glassmod:steel", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -704,7 +723,7 @@ core.register_node("glassmod:ice", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -719,7 +738,7 @@ core.register_node("glassmod:treeleaves", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -734,7 +753,7 @@ core.register_node("glassmod:pineneedles", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -749,7 +768,7 @@ core.register_node("glassmod:aspenleaves", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -764,7 +783,7 @@ core.register_node("glassmod:acacialeaves", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -779,7 +798,7 @@ core.register_node("glassmod:jungleleaves", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -794,7 +813,7 @@ core.register_node("glassmod:cactusside", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -809,7 +828,7 @@ core.register_node("glassmod:cactustop", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -824,7 +843,7 @@ core.register_node("glassmod:water", {
 	sunlight_propagates = true,
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -841,7 +860,7 @@ core.register_node("glassmod:lava", {
 	
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -857,7 +876,7 @@ core.register_node("glassmod:bookshelf", {
 	
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -873,7 +892,7 @@ core.register_node("glassmod:riverwater", {
 	
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
@@ -889,7 +908,7 @@ core.register_node("glassmod:obsidian", {
 	
 	is_ground_content = false,
 
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	sounds = default.node_sound_glass_defaults()
 })
 
