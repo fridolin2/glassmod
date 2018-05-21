@@ -1,3 +1,21 @@
+
+
+
+minetest.register_craft({
+	output = "glassmod:frame",
+	recipe = {
+		{"default:glass", "default:glass", "default:glass"},
+		{"default:glass", "", "default:glass"},
+		{"default:glass", "default:glass", "default:glass"}
+	}
+})
+minetest.register_craft( {
+	type = "shapeless",
+	output = '"glassmod:frame_clean" 1' ,
+	recipe = {"glassmod:frame"},  
+})
+
+
 minetest.register_craft( {
 	type = "shapeless",
 	output = '"glassmod:tree" 3' ,
